@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Information>
+    <action>Export</action>
+    <exportInformation>
+        <contentType>CSV</contentType>
+        <fileLocation></fileLocation>
+        <fileName>Account.CSV</fileName>
+        <objectName>Account</objectName>
+        <soql>Select Id,Name from Account</soql>
+    </exportInformation>
+    <importInformation>
+        <contentType>CSV/XML</contentType>
+        <externalIdFieldName>{external Id API Name}</externalIdFieldName>
+        <fileLocation>{Location To fetch File}</fileLocation>
+        <fileName>{file name}</fileName>
+        <objectName>{SObject API Name}</objectName>
+        <operation>{DML Operation}</operation>
+    </importInformation>
+    <userinformation>
+        <orgtype>Developer</orgtype>
+        <password>maapaa1995</password>
+        <securityToken></securityToken>
+        <username>harsh@rawat.com</username>
+    </userinformation>
+</Information>

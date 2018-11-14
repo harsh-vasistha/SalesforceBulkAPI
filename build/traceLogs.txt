@@ -1,0 +1,317 @@
+WSC: Creating a new connection to https://login.salesforce.com/services/Soap/u/39.0 Proxy = DIRECT username null
+WSC: Connection configured to have request properties {SOAPAction=[""], Accept=[text/xml], Content-Encoding=[gzip], User-Agent=[Salesforce Web Service Connector For Java/1.0], Accept-Encoding=[gzip], Content-Type=[text/xml; charset=UTF-8]}
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Body>
+  <m:login xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:username>harsh@rawat.com</m:username>
+   <m:password>maapaa1995</m:password>
+  </m:login>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+null=[HTTP/1.1 200 OK]
+Content-Encoding=[gzip]
+Vary=[Accept-Encoding]
+Set-Cookie=[BrowserId=0rPp-SOmSNGN_BdjzIOAaA;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:57:57 GMT]
+Expires=[Thu, 01 Jan 1970 00:00:00 GMT]
+Content-Length=[805]
+Date=[Sun, 27 Aug 2017 17:57:57 GMT]
+Content-Type=[text/xml; charset=utf-8]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <soapenv:Body>
+        <loginResponse>
+          <result>
+            <metadataServerUrl>https://ap2.salesforce.com/services/Soap/m/39.0/00D280000011Uxc</metadataServerUrl>
+            <passwordExpired>false</passwordExpired>
+            <sandbox>false</sandbox>
+            <serverUrl>https://ap2.salesforce.com/services/Soap/u/39.0/00D280000011Uxc</serverUrl>
+            <sessionId>00D280000011Uxc!ASAAQJJLzq1yimNVo4GXiSt0YGzfvMykjVUWRPZ9ToJ07yg2_jzf5q2PgWCKKk5JRAzPIACWMpnbIvqqsSa6QOwFt9vzHnfk</sessionId>
+            <userId>005280000014tlfAAA</userId>
+            <userInfo>
+              <accessibilityMode>false</accessibilityMode>
+              <currencySymbol>$</currencySymbol>
+              <orgAttachmentFileSizeLimit>5242880</orgAttachmentFileSizeLimit>
+              <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+              <orgDefaultCurrencyLocale>en_US</orgDefaultCurrencyLocale>
+              <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+              <orgHasPersonAccounts>false</orgHasPersonAccounts>
+              <organizationId>00D280000011UxcEAE</organizationId>
+              <organizationMultiCurrency>false</organizationMultiCurrency>
+              <organizationName>Persistent systems Ltd.</organizationName>
+              <profileId>00e280000010DJ2AAM</profileId>
+              <roleId xsi:nil="true"/>
+                <sessionSecondsValid>7200</sessionSecondsValid>
+                <userDefaultCurrencyIsoCode xsi:nil="true"/>
+                  <userEmail>harsh_rawat@persistent.com</userEmail>
+                  <userFullName>Harsh Rawat</userFullName>
+                  <userId>005280000014tlfAAA</userId>
+                  <userLanguage>en_US</userLanguage>
+                  <userLocale>en_US</userLocale>
+                  <userName>harsh@rawat.com</userName>
+                  <userTimeZone>America/Los_Angeles</userTimeZone>
+                  <userType>Standard</userType>
+                  <userUiSkin>Theme3</userUiSkin>
+              </userInfo>
+            </result>
+          </loginResponse>
+        </soapenv:Body>
+      </soapenv:Envelope>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/ Proxy = DIRECT username null
+WSC: Connection configured to have request properties {X-SFDC-Session=[00D280000011Uxc!ASAAQJJLzq1yimNVo4GXiSt0YGzfvMykjVUWRPZ9ToJ07yg2_jzf5q2PgWCKKk5JRAzPIACWMpnbIvqqsSa6QOwFt9vzHnfk], Content-Encoding=[gzip], User-Agent=[Salesforce Web Service Connector For Java/1.0], Accept-Encoding=[gzip], Content-Type=[application/xml]}
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><jobInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <operation>query</operation>
+ <object>Account</object>
+ <concurrencyMode>Parallel</concurrencyMode>
+ <contentType>CSV</contentType>
+</jobInfo>
+------------ Request end   ----------
+Transfer-Encoding=[chunked]
+null=[HTTP/1.1 201 Created]
+Strict-Transport-Security=[max-age=31536000; includeSubDomains]
+X-Content-Type-Options=[nosniff]
+Content-Security-Policy=[referrer origin-when-cross-origin; upgrade-insecure-requests]
+Content-Encoding=[gzip]
+Set-Cookie=[BrowserId=McVCOEm3QGGumj_0GZg0TQ;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:57:58 GMT]
+Expires=[Thu, 01 Jan 1970 00:00:00 GMT]
+X-XSS-Protection=[1; mode=block]
+Date=[Sun, 27 Aug 2017 17:57:58 GMT]
+Content-Type=[application/xml]
+Location=[/services/async/39.0/job/7502800000B73LZAAZ]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <jobInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7502800000B73LZAAZ</id>
+ <operation>query</operation>
+ <object>Account</object>
+ <createdById>005280000014tlfAAA</createdById>
+ <createdDate>2017-08-27T17:57:58.000Z</createdDate>
+ <systemModstamp>2017-08-27T17:57:58.000Z</systemModstamp>
+ <state>Open</state>
+ <concurrencyMode>Parallel</concurrencyMode>
+ <contentType>CSV</contentType>
+ <numberBatchesQueued>0</numberBatchesQueued>
+ <numberBatchesInProgress>0</numberBatchesInProgress>
+ <numberBatchesCompleted>0</numberBatchesCompleted>
+ <numberBatchesFailed>0</numberBatchesFailed>
+ <numberBatchesTotal>0</numberBatchesTotal>
+ <numberRecordsProcessed>0</numberRecordsProcessed>
+ <numberRetries>0</numberRetries>
+ <apiVersion>39.0</apiVersion>
+ <numberRecordsFailed>0</numberRecordsFailed>
+ <totalProcessingTime>0</totalProcessingTime>
+ <apiActiveProcessingTime>0</apiActiveProcessingTime>
+ <apexProcessingTime>0</apexProcessingTime>
+</jobInfo>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ Proxy = DIRECT username null
+https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ
+Transfer-Encoding: chunked
+null: HTTP/1.1 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Content-Security-Policy: referrer origin-when-cross-origin; upgrade-insecure-requests
+Content-Encoding: gzip
+Set-Cookie: BrowserId=bY0omxAnQquqdcLicaMm5w;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:57:59 GMT
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection: 1; mode=block
+Date: Sun, 27 Aug 2017 17:57:59 GMT
+Content-Type: application/xml
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <jobInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7502800000B73LZAAZ</id>
+ <operation>query</operation>
+ <object>Account</object>
+ <createdById>005280000014tlfAAA</createdById>
+ <createdDate>2017-08-27T17:57:58.000Z</createdDate>
+ <systemModstamp>2017-08-27T17:57:58.000Z</systemModstamp>
+ <state>Open</state>
+ <concurrencyMode>Parallel</concurrencyMode>
+ <contentType>CSV</contentType>
+ <numberBatchesQueued>0</numberBatchesQueued>
+ <numberBatchesInProgress>0</numberBatchesInProgress>
+ <numberBatchesCompleted>0</numberBatchesCompleted>
+ <numberBatchesFailed>0</numberBatchesFailed>
+ <numberBatchesTotal>0</numberBatchesTotal>
+ <numberRecordsProcessed>0</numberRecordsProcessed>
+ <numberRetries>0</numberRetries>
+ <apiVersion>39.0</apiVersion>
+ <numberRecordsFailed>0</numberRecordsFailed>
+ <totalProcessingTime>0</totalProcessingTime>
+ <apiActiveProcessingTime>0</apiActiveProcessingTime>
+ <apexProcessingTime>0</apexProcessingTime>
+</jobInfo>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch Proxy = DIRECT username null
+WSC: Connection configured to have request properties {X-SFDC-Session=[00D280000011Uxc!ASAAQJJLzq1yimNVo4GXiSt0YGzfvMykjVUWRPZ9ToJ07yg2_jzf5q2PgWCKKk5JRAzPIACWMpnbIvqqsSa6QOwFt9vzHnfk], Content-Encoding=[gzip], User-Agent=[Salesforce Web Service Connector For Java/1.0], Accept-Encoding=[gzip], Content-Type=[text/csv]}
+------------ Request start   ----------
+Select Id,Name from Account
+------------ Request end   ----------
+Transfer-Encoding=[chunked]
+null=[HTTP/1.1 201 Created]
+Strict-Transport-Security=[max-age=31536000; includeSubDomains]
+X-Content-Type-Options=[nosniff]
+Content-Security-Policy=[referrer origin-when-cross-origin; upgrade-insecure-requests]
+Content-Encoding=[gzip]
+Set-Cookie=[BrowserId=377Y_vVEQba6U4ydJ48a0A;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:58:00 GMT]
+Expires=[Thu, 01 Jan 1970 00:00:00 GMT]
+X-XSS-Protection=[1; mode=block]
+Date=[Sun, 27 Aug 2017 17:58:00 GMT]
+Content-Type=[application/xml]
+Location=[/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <batchInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7512800000FEHM7AAP</id>
+ <jobId>7502800000B73LZAAZ</jobId>
+ <state>Queued</state>
+ <createdDate>2017-08-27T17:58:00.000Z</createdDate>
+ <systemModstamp>2017-08-27T17:58:00.000Z</systemModstamp>
+ <numberRecordsProcessed>0</numberRecordsProcessed>
+ <numberRecordsFailed>0</numberRecordsFailed>
+ <totalProcessingTime>0</totalProcessingTime>
+ <apiActiveProcessingTime>0</apiActiveProcessingTime>
+ <apexProcessingTime>0</apexProcessingTime>
+</batchInfo>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP Proxy = DIRECT username null
+https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP
+Transfer-Encoding: chunked
+null: HTTP/1.1 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Content-Security-Policy: referrer origin-when-cross-origin; upgrade-insecure-requests
+Content-Encoding: gzip
+Set-Cookie: BrowserId=C5SqzyBIQaanQ9EtCcudow;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:58:32 GMT
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection: 1; mode=block
+Date: Sun, 27 Aug 2017 17:58:32 GMT
+Content-Type: application/xml
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <batchInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7512800000FEHM7AAP</id>
+ <jobId>7502800000B73LZAAZ</jobId>
+ <state>Completed</state>
+ <createdDate>2017-08-27T17:58:00.000Z</createdDate>
+ <systemModstamp>2017-08-27T17:58:01.000Z</systemModstamp>
+ <numberRecordsProcessed>19</numberRecordsProcessed>
+ <numberRecordsFailed>0</numberRecordsFailed>
+ <totalProcessingTime>0</totalProcessingTime>
+ <apiActiveProcessingTime>0</apiActiveProcessingTime>
+ <apexProcessingTime>0</apexProcessingTime>
+</batchInfo>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP/result Proxy = DIRECT username null
+https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP/result
+null: HTTP/1.1 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Content-Security-Policy: referrer origin-when-cross-origin; upgrade-insecure-requests
+Content-Encoding: gzip
+Set-Cookie: BrowserId=enTBPrUeRKWVARPIG8BufQ;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:58:33 GMT
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 113
+X-XSS-Protection: 1; mode=block
+Date: Sun, 27 Aug 2017 17:58:33 GMT
+Content-Type: application/xml
+------------ Response start ----------
+  <result-list xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+    <result>75228000005tGYd</result>
+</result-list>
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP/result/75228000005tGYd Proxy = DIRECT username null
+https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ/batch/7512800000FEHM7AAP/result/75228000005tGYd
+Transfer-Encoding: chunked
+null: HTTP/1.1 200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Content-Security-Policy: referrer origin-when-cross-origin; upgrade-insecure-requests
+Content-Encoding: gzip
+Set-Cookie: BrowserId=yoGEHhNQSFKqUQ-Du9cbLg;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:58:33 GMT
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection: 1; mode=block
+Date: Sun, 27 Aug 2017 17:58:33 GMT
+Content-Type: text/csv; charset=UTF-8
+------------ Response start ----------
+"Id","Name"
+"00128000006XSggAAG","GenePoint"
+"00128000006XSghAAG","United Oil & Gas, UK"
+"00128000006XSgiAAG","United Oil & Gas, Singapore"
+"00128000006XSgjAAG","Edge Communications"
+"00128000006XSgkAAG","Burlington Textiles Corp of America"
+"00128000006XSglAAG","Pyramid Construction Inc."
+"00128000006XSgmAAG","Dickenson plc"
+"00128000006XSgnAAG","Grand Hotels & Resorts Ltd"
+"00128000006XSgoAAG","Express Logistics and Transport"
+"00128000006XSgpAAG","University of Arizona"
+"00128000006XSgqAAG","United Oil & Gas Corp."
+"00128000008j0IxAAI","Care Cordinator"
+"00128000008ip5aAAA","Providers"
+"00128000008ip4GAAQ","Practice"
+"0012800001AaTIhAAN","Hasrh"
+"0012800000h5QWaAAM","My Account"
+"0012800000mEe3GAAS","Wingo Ducks"
+"0012800000mEcvYAAS","Wingo Ducks"
+"0012800000mEeWWAA0","Wingo Ducks"
+
+------------ Response end   ----------
+WSC: Creating a new connection to https://ap2.salesforce.com/services/async/39.0/job/7502800000B73LZAAZ Proxy = DIRECT username null
+WSC: Connection configured to have request properties {X-SFDC-Session=[00D280000011Uxc!ASAAQJJLzq1yimNVo4GXiSt0YGzfvMykjVUWRPZ9ToJ07yg2_jzf5q2PgWCKKk5JRAzPIACWMpnbIvqqsSa6QOwFt9vzHnfk], Content-Encoding=[gzip], User-Agent=[Salesforce Web Service Connector For Java/1.0], Accept-Encoding=[gzip], Content-Type=[application/xml]}
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><jobInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7502800000B73LZAAZ</id>
+ <state>Closed</state>
+</jobInfo>
+------------ Request end   ----------
+Transfer-Encoding=[chunked]
+null=[HTTP/1.1 200 OK]
+Strict-Transport-Security=[max-age=31536000; includeSubDomains]
+X-Content-Type-Options=[nosniff]
+Content-Security-Policy=[referrer origin-when-cross-origin; upgrade-insecure-requests]
+Content-Encoding=[gzip]
+Set-Cookie=[BrowserId=_zMzczOFTXSkCuzgvo-Bbw;Path=/;Domain=.salesforce.com;Expires=Thu, 26-Oct-2017 17:58:35 GMT]
+Expires=[Thu, 01 Jan 1970 00:00:00 GMT]
+X-XSS-Protection=[1; mode=block]
+Date=[Sun, 27 Aug 2017 17:58:35 GMT]
+Content-Type=[application/xml]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <jobInfo
+   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
+ <id>7502800000B73LZAAZ</id>
+ <operation>query</operation>
+ <object>Account</object>
+ <createdById>005280000014tlfAAA</createdById>
+ <createdDate>2017-08-27T17:57:58.000Z</createdDate>
+ <systemModstamp>2017-08-27T17:57:58.000Z</systemModstamp>
+ <state>Closed</state>
+ <concurrencyMode>Parallel</concurrencyMode>
+ <contentType>CSV</contentType>
+ <numberBatchesQueued>0</numberBatchesQueued>
+ <numberBatchesInProgress>0</numberBatchesInProgress>
+ <numberBatchesCompleted>1</numberBatchesCompleted>
+ <numberBatchesFailed>0</numberBatchesFailed>
+ <numberBatchesTotal>1</numberBatchesTotal>
+ <numberRecordsProcessed>19</numberRecordsProcessed>
+ <numberRetries>0</numberRetries>
+ <apiVersion>39.0</apiVersion>
+ <numberRecordsFailed>0</numberRecordsFailed>
+ <totalProcessingTime>0</totalProcessingTime>
+ <apiActiveProcessingTime>0</apiActiveProcessingTime>
+ <apexProcessingTime>0</apexProcessingTime>
+</jobInfo>
+------------ Response end   ----------

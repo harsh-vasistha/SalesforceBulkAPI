@@ -37,7 +37,7 @@ public class JobHandler {
 		JobInfo job = new JobInfo();
 		job.setObject(sobjectName);
 		job.setOperation(OperationEnum.valueOf(operation));
-		job.setConcurrencyMode(ConcurrencyMode.Parallel);
+		//job.setConcurrencyMode(ConcurrencyMode.Parallel);
 		job.setContentType(ContentType.valueOf(contentType.toUpperCase()));
 		if (externalId != null) {
 			job.setExternalIdFieldName(externalId);

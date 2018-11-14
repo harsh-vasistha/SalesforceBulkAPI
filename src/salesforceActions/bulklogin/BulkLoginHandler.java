@@ -37,7 +37,7 @@ public class BulkLoginHandler {
 		} else if (environment.trim().equalsIgnoreCase("Sandbox")) {
 			configuration.setAuthEndpoint("https://test.salesforce.com/services/Soap/u/39.0");
 		} else {
-			configuration.setAuthEndpoint("https://login.salesforce.com/services/Soap/u/26.0");
+			configuration.setAuthEndpoint("https://login.salesforce.com/services/Soap/u/39.0");
 		}
 		configuration.setCompression(true);
 		configuration.setTraceFile("traceLogs.txt");
